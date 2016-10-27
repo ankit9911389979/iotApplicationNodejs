@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: iotApplicationNodejs
+  host: iotApplicationNodejs
+  disk_quota: 1024M
+  services:
+  - Internet of Things Platform-u8
+  - Cloudant NoSQL DB-i2
+  - iotApplicationNodejs-cloudantNoSQLDB
+  - availability-monitoring-auto
